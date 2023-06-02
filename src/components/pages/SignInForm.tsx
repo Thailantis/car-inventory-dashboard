@@ -38,20 +38,20 @@ const SignInForm: React.FC = () => {
     return (
         <div>
             {error && <p>{error}</p>}
-            {user ? (
+            {setUser ? (
                 <button onClick={handleSignOut}>Sign Out</button>
             ):(
                 <form onSubmit={handleSignIn}>
                     <div>
                         <label>
                             Username:
-                            <input type="text" value{username} onChange={(e) => setUsername(e.target.value)} />
+                            <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
                         </label>
                     </div>
                     <div>
                         <label>
                             Password:
-                            <input type="text" value{password} onChange={(e) => setPassword(e.target.value)} />
+                            <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
                         </label>
                     </div>
                     <button type="submit">Sign In</button>
