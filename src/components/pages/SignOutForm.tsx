@@ -11,7 +11,7 @@ const SignOutForm: React.FC = () => {
     return (
         <div>
             <h2>Welcome, {user.username}</h2>
-            <form onsubmit={handleSignOut}>
+            <form onSubmit={handleSignOut}>
                 <p>Click the button below to sign out:</p>
                 <button type="submit">Sign Out</button>
             </form>
